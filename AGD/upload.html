@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input{
+                background-color: #ffff99;
+            }
+            
+            #name{
+                background-color: #ffff99;
+            }
+            div {
+                float: left;
+            }
+            #id01 {
+                float: right;
+            }
+            input[type=file], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #154B06;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #154B06;
+                background-color: green;
+                border-radius: 1px;
+                box-sizing: border-box;
+            }
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #154B06;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=number], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #154B06;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=email], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #154B06;
+                border-radius: 4px;
+                box-sizing: border-box;            
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #154B06;
+                border-radius: 4px;
+                background-color: #ffff99;
+                font-size: 15px;
+                resize: none;
+            }
+            body{
+                background-image: url(im/background.jpg);
+            }
+        </style>
+    </head>
+        <body>     
+        <table width="100%">
+            <th>
+                <h3 style="color: red; font-size: 40px" align="center">ĐĂNG BÀI VIẾT</h3>
+                    <form action="index.html"  >
+                        <label for="image">Tải hình ảnh.</label>
+                            <input type="file" name="pic" accept="image/*"><br>
+                        <label id="tenMon" for="fname">Tên món:(*)</label>
+                            <input id="name" type="text" name="Tên món:(*)" placeholder="Tên món..."><br>
+                        <label for="fname">Giới thiệu:(*)</label>
+                        <input type="email" name="Giới thiệu:(*)" placeholder="Giới thiệu..."><br>
+                        <label for="fname">Link Video:</label>
+                        <input type="number" name="Link Video(*)" placeholder="Link Video..."><br>
+                        <label for="fname">Nguyên liệu:(*)</label>
+                        <textarea placeholder="Nguyên liệu..."></textarea>
+                        <label for="fname" >Cách làm: <br>(1)Sơ chế: (*)</label>
+                        <textarea placeholder="Sơ chế: ..."></textarea>
+                        <label for="fname" >          (2)Thực hiện: (*)</label>
+                        <textarea placeholder="Thực hiện: ..."></textarea>
+                        <label for="fname" >Cách dùng(*)</label>
+                        <textarea placeholder="Cách dùng..."></textarea>
+
+                        <input onclick="alert('Công việc đã được thực thi!')"  type="Submit" value="Thực hiện">
+                    </form>
+            </th>
+
+        </table>
+
+    </body>
+</html>

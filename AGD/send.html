@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div {
+                float: left;
+            }
+            #id01 {
+                float: right;
+            }
+            input[type=file], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 1px;
+                box-sizing: border-box;
+            }
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=number], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=email], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                font-size: 15px;
+                resize: none;
+            }
+        </style>
+    </head>
+    <body style="background-color: url('im\screen.jpg')">
+        <table width="100%">
+            <th>
+                <h3 style="color: red; font-size: 30px" align="center">ÐÓNG GÓP MÓN ĂN</h3>
+                    <form action="index.html">
+                        <label for="image">Tải hình ảnh.</label>
+                        <input type="file" name="pic" accept="image/*"><br>
+                        <label for="fname">Họ và tên:(*)</label>
+                        <input type="text" name="Hovaten(*)" placeholder="Họ và tên..."><br>
+                        <label for="fname">Email:(*)</label>
+                        <input type="email" name="Email:(*)" placeholder="Your email..."><br>
+                        <label for="fname">Số điện thoại:</label>
+                        <input type="number" name="SÐT:(*)" placeholder="Số điện thoại..."><br>
+                        <label for="fname">Nguyên liệu:(*)</label>
+                        <textarea placeholder="Nguyên liệu..."></textarea>
+                        <label for="fname" >Cách làm:(*)</label>
+                        <textarea placeholder="Cách làm..."></textarea>
+
+                        <input onclick="alert('Cảm ơn bạn đã góp ý!')"  type="Submit" value="Gửi">
+                    </form>
+            </th>
+
+        </table>
+
+    </body>
+</html>

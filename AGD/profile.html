@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {font-family: monospace;color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{position: relative;border-width: 0px 1px 1px 1px; border-style: solid; border-color: #888 ; height:600px; background: white ; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #ffffff; height: 10px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            footer.end{ height: auto; color: black; position: absolute; bottom: 10px; display: block; text-align: center; width: 100% }
+            div.col-sm-4{background: #E0F8F1; height: 425px; top: 30px; left: 30px }
+            div.col-sm-7{position: absolute;background: #CEF6F5;top: 110px; right:  30px; height: auto}
+            div.profile img{display: block; float: left; margin: 10px}
+            div.profile h4{font-weight: 700; padding: 10px 10px 10px 30px}
+            #granfather h3{margin-left: 30px;color: #696969; width: 97%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: monospace; font-size: 25px; background: #CEF6F5; padding: 13px}
+            h5{display: block; float: left; font-size: 15px; font-weight: 500; padding-right: 10px}
+            div.change{ margin: 0px}
+            div.change a{display: block; width: 100%; margin: 0px; padding: 10px}
+            div.change a:hover{background: #CEF6F5}
+            span.logout{display: block; float: right}
+            h6 {display: block; width: 100%; margin: 10px}
+            hr{background:black}
+            /*boostrap reset password*/
+            * {box-sizing: border-box}
+   
+
+            /* Set a style for all buttons */
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+
+            button:hover {
+                opacity:1;
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+            }
+
+            /* Float cancel and signup buttons and add an equal width */
+            .cancelbtn, .signupbtn {
+                float: left;
+                width: 50%;
+            }
+
+            /* Add padding to container elements */
+            .container {
+                padding: 16px;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0, 0, 0, 0.5);
+                padding-top: 50px;
+            }
+
+            /* Style the horizontal ruler */
+            hr {
+                border: 1px solid #f1f1f1;
+                margin-bottom: 25px;
+            }
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 30%; /* Could be more or less, depending on screen size */
+                height: auto;
+                padding: 0px 10px 10px 10px ;
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: 40px;
+                font-weight: bold;
+                color: #5ECEEE;
+            }
+
+            .close:hover,.close:focus {
+                color: #00BFFF;
+                cursor: pointer;
+            }
+
+            /* Clear floats */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            /* Change styles for cancel button and signup button on extra small screens */
+            @media screen and (max-width: 300px) {
+                .cancelbtn, .signupbtn {
+                    width: 100%;
+                }
+            }
+            a.icon{display: block; padding: 0; width: 70px;}
+        </style>
+        <script>
+// Get the modal
+            var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+            function fogetpass(){
+                alert("Mật khẩu mới đã được gửi tới điện thoại của bạn. Vui lòng kiểm tra mục tin nhắn!?");       
+            }
+            
+            
+        </script>   
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Tất Cả Tin</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="#section44">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather" class="row">
+            <h3>Thông tin tài khoản của bạn<span class="logout"><h5>Monochrome</h5><a href="" style="font-size: 13px">Đăng xuất</a></span></h3>
+            <div class="col-sm-4">
+
+                <div class="profile">
+                    <img src="im/avata.jpg" height="120" width="120" alt=""/>
+                    <h4>Monochrome</h4>
+                    <p>1000001 <br> Số bài đăng: 1</p>
+                    <br>
+                </div><hr/>
+                <div class="change">
+                    <a href="demo.html"><span class="glyphicon glyphicon-camera"></span> Cập nhật ảnh đại diện</a>
+                    <a href="demo.html"><span class="glyphicon glyphicon-pencil"></span> Thay đổi thông tin</a>
+                    <a href="#" onclick="document.getElementById('id01').style.display = 'block'"><span class="glyphicon glyphicon-wrench"></span> Thay đổi mật khẩu</a>
+                    <a href="#"><span class="glyphicon glyphicon-link"></span> Liên kết </a><a href="#" style="width: 70px; float: left"><img src="im/google_signin_buttons/ios/1x/icon_gg.png" alt=""/></a><a href="#" style="width: 70px; float: left"><img src="im/icon_fb.png" height="50" width="50" alt=""/></a>
+                </div>
+            </div>
+            <div id="id01" class="modal">
+                <div class="modal-content">
+                    <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                    <h4 style="text-align: left; padding: 10px 0px 0px 10px; font-weight: 700; display: block">Thay đổi mật khẩu</h4><hr/>
+                    <form action="profile.html">
+                        <div class="form-group">
+                            <label for="email">Nhập mật khẩu cũ</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu mới</label>
+                            <input type="text" class="form-control" id="pwd"  name="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Nhập mật khẩu mới</label>
+                            <input type="text" class="form-control" id="pwd" name="pwd">
+                        </div>
+                        <div style="display: block; text-align: right">
+                            <p style="font-size: 10px; color: red; text-align: left">Nếu quên mật khẩu, hãy click vào mục quên mật khẩu. Mật khẩu mới sẽ được gửi tới số điện thoại của bạn! </p>
+                            <label><a href="#" onclick="fogetpass()">Quên mật khẩu?</a></label>
+                        </div>
+                        <button type="submit" onclick="alert('Mật khẩu đã được đổi thành công.')" class="btn btn-default">Đổi</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                
+                    <h4>Thông tin cá nhân</h4><hr>
+                <table class="table table-striped" id="mytable">
+                    <tbody>
+                        <tr class="blue">
+                            <td >Tên</td>
+                            <td id="name">Monochrome</td>
+                        </tr>
+                        <tr class="re">
+                            <td > Mật Khẩu</td>
+                            <td id="pass">********
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >Ngày tham gia</td>
+                            <td >26/03/2018</td>
+                        </tr>
+                        <tr class="blue">
+                            <td>Ngày sinh</td>
+                            <td id="dob">17/09/2002</td>
+                        </tr>
+                        <tr class="blue1">
+                            <td >Số điện thoại</td>
+                            <td id="phone">0987656xxx</td>
+                        </tr>
+                        <tr class="blue">
+                            <td >Địa chỉ</td>
+                            <td id="add">Phòng F204 - Hòa Lạc resort</td>
+                        </tr>
+                        <tr class="blue1">
+                            <td >Email</td>
+                            <td id="mail">thanhctse05756@fpt.edu.vn</td>
+                        </tr>
+                        <tr>
+                            <td >Liên kết</td>
+                            <td id="mail">Chưa liên kết</td>
+                        </tr>
+
+                        <tr class="blue">
+                            <td >Khác</td>
+                            <td id="mail">Chưa có dữ liệu</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <footer class="end"><hr/><a href="#">Điều khoản sử dụng </a> | <a href="#"> Chính sách bảo mật</a></footer>
+        </div>
+        <br>
+
+    </body>
+</html>

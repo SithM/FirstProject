@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 0px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+
+            #granfather{border: 1px solid #b3b3b3; height: auto; background: white ; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fit{ height: 50px; width: 100%; }
+            #top {height: 50px}
+            #end{ height: auto; color: black; padding-left: 50px; background: #f1f1f1}
+            #top div.log { width: 200px; float: right; height: auto }
+            div button.login{ height: 35px; width: 100px; padding:5px; float: left; color: #696969;font-family: monospace; font-weight: 900}  
+            div button.create{ height: 35px; width: 100px; padding:5px; color: #696969; font-family: monospace; font-weight: 900}
+            /* Full-width input fields */
+            input[type=text], input[type=password] {width: 100%;padding: 12px 20px; margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;}
+            /* Set a style for all buttons */
+            button {
+                background-color: #39C0E5;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #39C0E5;
+            }
+
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            img.avatar {
+                width: 70px;
+                border-radius: 50%;
+            }
+
+            .container-2 {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 15px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #39C0E5;
+                cursor: pointer;
+            }
+
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {-webkit-transform: scale(0)} 
+                to {-webkit-transform: scale(1)}
+            }
+
+            @keyframes animatezoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+                .cancelbtn {width: 100%;}
+            }
+            div.log div.container-2{position: relative; width: 100%; float: left; height: 600px; background: #ffffff; border-radius: 4px}
+
+            .mySlides {display:none;}
+            .container-1{z-index: 99;width: auto; margin-left: 0px;}
+            #father{width: 100%; text-align: center; padding: 0px 20px 0px 20px}
+            #father h2{color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: 'Roboto'; font-size: 25px; background: #CEF6F5; padding: 13px};
+            #father p{text-align: left; font-size: 18px}
+            #father div.ke{height:30px; width: 100%}
+            #father:after{clear: both;content: ".";display: block;width: 0px;height: 0px;}
+            #father div.danhmuc{ width: 25%; height: auto; border: 1px solid #d3d3d3;float: left; position: relative; padding: 20px}
+            .absolute{height: 50px; width: 100px; position: absolute;top: 330px; right: 15px}
+            #father div.danhmuc:hover{display:block}
+            #father div.khung{height: auto; display: table}
+            h3{font-family: monospace; font-weight: 900; color:#39C0E5}
+
+            * {box-sizing: border-box;}
+
+            .container {
+                position: relative;
+                width: 50%;
+                max-width: 300px;
+                width: 25%; height: auto; border: 1px solid #d3d3d3;float: left; position: relative; padding: 20px; padding-bottom: 0px;
+            }
+            .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgba(224, 255, 255, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 86%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                margin-bottom: 55px;
+                text-align: center;
+                overflow: hidden;
+            }
+
+
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .overlay a{display: block; background: rgba(0,0,0,0.5); width: 50%; float: left; height: 50px; padding: 10px;}
+            .overlay a span{font-size:27px}
+            div h5.loginwin{z-index: -1; position: absolute ; width: 85%; height: 60px; font-size: 20px; top: 40px; font-family: monospace;font-weight: 900; left: 100px; display: block; float: left; background: #CEF6F5; padding-left: 20px; padding-top: 10px;}
+            
+            div.container-3{width: 100%}
+            div.demo{height: auto; width: 50%; padding-left: 30px; font-family: monospace}
+            div.container h5{ font-size: 16px; font-family: monospace; font-weight: 500; text-align: left;}
+        </style>
+        <script>
+// Get the modal
+            var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+            var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+            
+            function fogetpass(){
+                alert("Mật khẩu mới đã được gửi tới điện thoại của bạn. Vui lòng kiểm tra mục tin nhắn!?");       
+            }
+        </script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="info.html">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Xem tất cả</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="listgiavi.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="report.html">Phản Hồi</a></li>
+                                    <li><a href="send.html">Góp Ý Món Ăn </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Tài Khoản<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Thông Tin</a></li>
+                                    <li><a href="demo.html">Thay Đổi Thông Tin</a></li>
+                                    <li><a href="index.html">Đăng Xuất</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Các Form Khác<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="formdelete.html">Xóa Bài, Ẩn Bài</a></li>
+                                    <li><a href="upload.html">Admin Đăng Bài</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="top">             
+            <div class="log">
+                <h5 class="loginwin"><a  href="profile.html"><span title="Click to setup your account" style="color: #39C0E5; font-size: 30px" class="glyphicon glyphicon-user"></span></a> Xin Chào Monochrome </h5>
+
+                <button onclick="document.getElementById('id01').style.display = 'block'" class="login">Đăng Nhập</button>
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" id="id001" >
+                            
+                        <div class="container-2">
+                            <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                        
+                            <label><h3>Đăng Nhập</h3></label><br>
+                            <label for="uname"><b>Tài khoản</b></label>
+                            <input id="user" type="text" placeholder="Tài khoản" name="uname" required>
+
+                            <label for="psw"><b>Mật khẩu</b></label>
+                            <input id="pass" type="password" placeholder="Mật khẩu" name="psw" required>
+
+                            <button type="submit" id="login" name="login" onclick="login()">Đăng nhập</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" > Remember me
+                            </label>
+                            <p style="font-size: 10px; color: red; text-align: left">Nếu quên mật khẩu, hãy click vào mục quên mật khẩu. Mật khẩu mới sẽ được gửi tới số điện thoại của bạn! </p>
+                            <span class="psw">Quên <a href="#" onclick="fogetpass()">mật khẩu?</a>
+                                <a href="mailto:youraddress">zxc</a></span>
+                            <hr><p>
+                                Hoặc Đăng Nhập Bằng FB hoặc Google</p>
+                            <img src="im/btn_google_signin_dark_focus_web.png"  alt=""/>
+                            <img src="im/fab.jpg" width="230" height="46" alt=""/></div></form>
+
+                </div>
+            </div>
+            <!-- form create -->
+            <div class="log">
+                <button onclick="document.getElementById('id02').style.display = 'block'" class="create" style="z-index: 4" >Đăng Kí</button>
+
+                <div id="id02" class="modal">
+                    <form class="modal-content animate" id="id02" action="/action2_page.php">
+                        
+                        <div class="container-2">
+                            <span onclick="document.getElementById('id02').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                            <label><h3>Hoặc Đăng Kí Ngay Tại Đây</h3></label><br>
+                            <label for="uname"><b>Tài khoản</b></label>
+                            <input type="text" placeholder="Tài khoản" name="uname2" required>
+                            <label for="psw"><b>Mật khẩu</b></label>
+                            <input type="password" placeholder="Mật khẩu" name="psw2" required>
+                            <label for="psw"><b>Nhập lại mật khẩu</b></label>
+                            <input type="password" placeholder="Nhập lại mật khẩu" name="psw2" required>
+                            <label for="psw"><b>Giới tính: </b></label>
+                            <input type="radio"  name="sex" checked="" value="Nam" required>Nam
+                            <input type="radio"  name="sex"  value="Nữ" required>Nữ<br><br>
+                            <label for="uname"><b>Số điện thoại</b></label>
+                            <input type="text" placeholder="Số điện thoại" name="phone2" required>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember2"> Tôi đồng ý với các điều khoản sử dụng
+                            </label>
+                            <button type="submit" id="2cz" name="creat">Đăng kí</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="granfather">
+            <div class="container-1">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="im/apple.jpg" alt="Los Angeles" style="width:100%; height: 540px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="im/hel.jpg" alt="Chicago" style="width:100%; height: 540px">
+                        </div>
+
+                        <div class="item">
+                            <img src="im/ora.jpg" alt="New york" style="width:100%; height: 540px">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br><hr/>
+            <div id="father">
+                <div class="khung"><a href="list.html"><h2>Xem nhiều nhất</h2></a>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                </div>           
+                <div class="ke"></div>
+                <a href="list.html"><h2>Hải sản</h2></a>
+                <div class="khung">
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div></div>
+                <div class="ke"></div>
+                <div class="khung">
+                    <a href="list.html"><h2>Thịt, Thịt và Thịt</h2></a>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div></div>
+            </div><br>
+        </div>
+        <div id="end">
+            <hr/>
+            <b>Bản quyền thuộc về group 1</b>
+            <p>Nhà tài trợ: Google, w3school, web designer wall</p>
+            <p>THÀNH VIÊN: Vũ Quyết Thắng<br>Lưu Thị Phương Thảo <br> Cao Tiến Thành</p>
+        </div>
+
+    </body>
+</html>

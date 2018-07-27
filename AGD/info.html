@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{border-width: 0px 1px 1px 1px; border-style: dotted; height: auto; background: white ; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #ffffff; height: 10px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            #end{ height: auto; color: black; padding-left: 50px; float:end; background: #f1f1f1}
+            #father{width: 100%; text-align: center; padding: 0px 20px 0px 20px}
+            #father h3{color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: 'Roboto'; font-size: 25px; background: #CEF6F5; padding: 13px}
+            #father h4{display: block; text-align: left; font-family: 'Roboto'; font-size: 20px; padding-left: 2px}
+            #father div.ke{height:10px; width: 74%}
+            #father:after{clear: both;content: ".";display: block;width: 0px;height: 0px;}
+            .absolute{height: 50px; width: 100px; position: absolute;top: 330px; right: 15px}
+            #father div.khung{width: 75%; height: auto; display: table; float: left}
+            #father div.khung a.link{float: left; color: #696969; padding-left: 10px;  font-size: 23px; font-family: monospace}
+            #father div.khung img{float: left; border: 1px solid #b3b3b3}
+            #father div.khung p{display: table; text-align: left; font-size: 15px; padding-left: 10px; height: 160px; font-family: monospace}
+            #father div.group{width: 23%; height: auto; display: table; float: right; padding-top: 30px }
+            #father div.group a{display: block; color: #696969; font-size: 15px; background: #CEF6F5; padding: 7px; font-family:  monospace}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Tất Cả Tin</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="listgiavi.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Thông Tin Hữu Ích</li>        
+            </ul>
+        <div id="father">
+            <div class="khung"><a href="#"><h3>Sức Khỏe Ăn Uống</h3></a>
+                <img src="im/egg.jpg" width="300" height="200" alt=""/>
+                <a class="link"  href="#">Ăn nhiều trứng có tốt không?</a><br/><br/>
+                <p>Trứng là một thực phẩm phổ biến trong mọi gia đình vì độ dinh dưỡng mà nó mang lại. Thế nhưng liệu ăn bao
+                nhiêu trứng mỗi ngày thì là đủ? P.G.S BNA đã có những lời khuyên về cách sử dụng loại thực phẩm này...</p>
+                <br/>
+                <img src="im/egg.jpg" width="300" height="200" alt=""/>
+                <a class="link" href="#">Ăn nhiều trứng có tốt không?</a><br/><br/>
+                <p>Trứng là một thực phẩm phổ biến trong mọi gia đình vì độ dinh dưỡng mà nó mang lại. Thế nhưng liệu ăn bao
+                nhiêu trứng mỗi ngày thì là đủ? P.G.S BNA đã có những lời khuyên về cách sử dụng loại thực phẩm này...</p>
+                
+                <hr/>
+                <a href="#"><h3>Thực Phẩm</h3></a>
+                <img src="im/food.jpg" width="300" height="200" alt=""/>
+                <a class="link" href="#">Thức ăn bẩn bủa vây các trường học.</a><br/><br/>
+                <p>Thức ăn, đồ uống bắt mắt, không nhãn mác, có ký hiệu lạ… được bày bán tràn lan, lôi cuốn nhiều em học sinh
+                    mua và sử dụng. Đó là thực tế đã và đang tồn tại ở nhiều cổng trường học đóng trên địa bàn thành phố hiện nay.
+                    Câu hỏi đặt ra, liệu cơ quan chức năng có bất lực với tình trạng kinh doanh thực phẩm bẩn đang đe dọa sức khỏe
+                    của các em?</p><br/>
+                <img src="im/food.jpg" width="300" height="200" alt=""/>
+                <a class="link" href="#">Thức ăn bẩn bủa vây các trường học.</a><br/><br/>
+                <p>Thức ăn, đồ uống bắt mắt, không nhãn mác, có ký hiệu lạ… được bày bán tràn lan, lôi cuốn nhiều em học sinh
+                    mua và sử dụng. Đó là thực tế đã và đang tồn tại ở nhiều cổng trường học đóng trên địa bàn thành phố hiện nay.
+                    Câu hỏi đặt ra, liệu cơ quan chức năng có bất lực với tình trạng kinh doanh thực phẩm bẩn đang đe dọa sức khỏe
+                    của các em?</p>
+            <hr/>
+            <a href="#"><h3>Dinh Dưỡng</h3></a>
+                <img src="im/energy.jpeg" width="300" height="200" alt=""/>
+                <a class="link" href="#">Chọn món ăn sao cho hợp lí.</a><br/><br/>
+                <p>Một khẩu phần ăn cân bằng dinh dưỡng hết sức quan trong đối với sự sống. Bởi lẽ, các cơ quan, các mô trong cơ
+                    thể rất cần những chất dinh dưỡng đúng để hoạt động hiệu quả. Nếu không, cơ thể sẽ dễ dàng ốm bệnh, mệt mỏi, 
+                    nhiễm trùng, học tập và làm việc kém hiệu quả.</p><br/>
+                <img src="im/energy.jpeg" width="300" height="200" alt=""/>
+                <a class="link" href="#">Chọn món ăn sao cho hợp lí.</a><br/><br/>
+                <p>Một khẩu phần ăn cân bằng dinh dưỡng hết sức quan trong đối với sự sống. Bởi lẽ, các cơ quan, các mô trong cơ 
+                    thể rất cần những chất dinh dưỡng đúng để hoạt động hiệu quả. Nếu không, cơ thể sẽ dễ dàng ốm bệnh, mệt mỏi,
+                    nhiễm trùng, học tập và làm việc kém hiệu quả.</p>
+            <hr/>
+            <a href="#"><h3>Mẹo Vặt</h3></a>
+                <img src="im/chanh.jpg" width="300" height="200" alt=""/>
+                <a class="link" href="anInfor.html">Làm sạch vật dụng chỉ với vài quả chanh.</a><br/><br/>
+                <p>Khăn và tất sau một thời gian sử dụng sẽ bị dính những vết bẩn "cứng đầu" rất khó tẩy sạch bằng xà phòng. Đặc 
+                    biệt là các loại khăn và tất màu trắng thì càng khó làm sạch hơn nữa. Lúc này, thay vì dùng xà phòng hay các 
+                    chất tẩy mạnh đầy hóa chất thì bạn hãy tận dụng chanh theo cách này, bảo đảm khăn và tất sẽ trắng bất ngờ ngay.</p><br/>
+                <img src="im/chanh.jpg" width="300" height="200" alt=""/>
+                <a class="link" href="anInfor.html">Làm sạch vật dụng chỉ với vài quả chanh.</a><br/><br/>
+                <p>Khăn và tất sau một thời gian sử dụng sẽ bị dính những vết bẩn "cứng đầu" rất khó tẩy sạch bằng xà phòng. Đặc 
+                    biệt là các loại khăn và tất màu trắng thì càng khó làm sạch hơn nữa. Lúc này, thay vì dùng xà phòng hay các 
+                    chất tẩy mạnh đầy hóa chất thì bạn hãy tận dụng chanh theo cách này, bảo đảm khăn và tất sẽ trắng bất ngờ ngay.</p>
+            </div>
+            <div class="group">
+                <h4>Tin Nổi Bật ________________</h4>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                
+                <h4>Quảng Cáo ________________</h4>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+                <img src="im/chanh.jpg" width="248" height="160" alt=""/>
+                <a href="#">Làm sạch vật dụng chỉ với vài quả chanh.</a>
+            </div>
+        </div><br>
+        </div>
+        <div id="end">
+            <hr/>
+            <b>Bản quyền thuộc về group 1</b>
+            <p>Nhà tài trợ: Google, w3school, web designer wall</p>
+            <p>THÀNH VIÊN: Vũ Quyết Thắng<br>Lưu Thị Phương Thảo <br> Cao Tiến Thành</p>
+        </div>
+
+    </body>
+</html>

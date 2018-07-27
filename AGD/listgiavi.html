@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{border-width: 0px 1px 1px 1px; border-style: solid; border-color: #888 ; height: 1000px; background: white ; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #f1f1f1; height: 100px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            #end{ height: auto; color: black; padding-left: 50px; float:end;background: #f1f1f1}
+            h3 {color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: monospace; font-size: 25px; background: #CEF6F5; padding: 13px}
+            h4 {font-family: monospace; font-weight: 700}
+            p {font-family: monospace;}
+            div.sp {border: 1px solid #00BFFF; margin-bottom: 10px}
+            div.sp:hover {border: 2px solid #39C0E5}
+            div.sp a{display: block; text-align: center; padding: 13px; background: #5ECEEE }
+            div.col-sm-2 { border: 1px solid #888}
+            div.col-sm-2 img{display: block}
+            h4.footer {color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: monospace; font-size: 20px; background: #CEF6F5; padding: 10px}
+            .zoom {
+                background-color: green;
+                transition: transform .2s;
+                width: 160px;
+                height: 180px;
+                margin: 0 auto;
+            }
+
+            .zoom:hover {
+                -ms-transform: scale(1.2); /* IE 9 */
+                -webkit-transform: scale(1.3); /* Safari 3-8 */
+                transform: scale(1.2); 
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="listgiavi.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc" style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Gia Vị Bạn Cần</li>        
+            </ul>
+            <div class="col-sm-9">
+                <h3>AJINOMOTO-Chuẩn Vị Nêm, Nếm Đậm Đà</h3>
+                <a href="ajinomoto.html"><img src="im/ajino.jpg" alt=""/></a>
+                <img src="im/ajino.jpg" alt=""/>
+                <h3>ChinSu-Gia Vị Cho Mọi Nhà</h3>
+                <img src="im/ajino.jpg" alt=""/>
+                <img src="im/ajino.jpg" alt=""/>
+            </div>
+            <div class="col-sm-3"><h4>Gia Vị Nổi Tiếng_______</h4>
+                <div class="sp"><img src="im/ajiq.jpg" width="250" alt=""/><a href="#">Bột Chiên Xù AJI-Quyck</a></div>
+                <div class="sp"><img src="im/ajiq.jpg" width="250" alt=""/><a href="#">Bột Chiên Xù AJI-Quyck</a></div>
+                <div class="sp"><img src="im/ajiq.jpg" width="250" alt=""/><a href="#">Bột Chiên Xù AJI-Quyck</a></div>
+            
+        </div>
+        </div>
+        <br>
+        <div id="end">
+            <hr/>
+            <b>Bản quyền thuộc về group 1</b>
+            <p>Nhà tài trợ: Google, w3school, web designer wall</p>
+            <p>THÀNH VIÊN: Vũ Quyết Thắng<br>Lưu Thị Phương Thảo <br> Cao Tiến Thành</p>
+        </div>
+
+    </body>
+</html>

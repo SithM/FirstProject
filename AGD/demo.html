@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {font-family: monospace;color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{position: relative;border-width: 0px 1px 1px 1px; border-style: solid; border-color: #888 ; height:770px; background: white ; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #ffffff; height: 10px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            #end{ height: auto; color: black; padding-left: 50px; float:end}
+            div.col-sm-4{position: absolute;background: #E0F8F1; height: auto;  top: 220px; left: 30px }
+            div.col-sm-7{position: absolute; background: #CEF6F5;top: 220px; right: 30px; height: auto}
+            div.col-sm-11{position: absolute; height: 200px; top: 20px; left: 15px; width: 98%}
+            span.repass{display: none;}
+            span.recode{display: none;}
+            table tbody tr.re:hover span.repass{display: block}
+            ul.note{background: #FCFCD0;border-left: 6px solid #FFFF00; display: block; text-align: left; padding: 13px}
+            table tbody tr.ra:hover span.reava{display: block}
+            span.reava{display: none;}
+            #granfather h3{margin-left: 0px;color: #696969; width: 97%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: monospace; font-size: 25px; background: #CEF6F5; padding: 13px}
+            footer.end{ height: auto; color: black; position: absolute; bottom: 10px; display: block; text-align: center; width: 100% }
+            
+        </style>
+        <script>
+            function check() {
+                var table = document.getElementById('mytable');
+                document.getElementById("chname").value = table.rows[2].cells[1].innerHTML;
+                document.getElementById("chdate").value = table.rows[4].cells[1].innerHTML;
+                document.getElementById("chphone").value = table.rows[5].cells[1].innerHTML;
+                document.getElementById("chadd").value = table.rows[6].cells[1].innerHTML;
+                document.getElementById("chemail").value = table.rows[7].cells[1].innerHTML;
+                document.getElementById("chfav").value = table.rows[8].cells[1].innerHTML;
+            }
+            function getValue() {
+                var table = document.getElementById('mytable');
+                table.rows[2].cells[1].innerHTML = document.getElementById("chname").value;
+                table.rows[4].cells[1].innerHTML = document.getElementById("chdate").value;
+                table.rows[5].cells[1].innerHTML = document.getElementById("chphone").value;
+                table.rows[6].cells[1].innerHTML = document.getElementById("chadd").value;
+                table.rows[7].cells[1].innerHTML = document.getElementById("chemail").value;
+                table.rows[8].cells[1].innerHTML = document.getElementById("chfav").value;
+                return false;
+            }
+        </script>
+    </head>
+    <body onload="check()">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="index.html">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Tất Cả Tin</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="#section44">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather">
+            <div class="row">
+                <div class="col-sm-11" >
+                    <h3>Thay đổi thông tin cho tài khoản của bạn</h3>
+                    <ul class="note">
+                        <h4>Note:</h4>
+                        <ol>Nên sử dụng thông tin thực để đảm bảo tính an toàn.</ol>
+                        <ol>Mọi trường hợp không cung cấp đủ thông tin hoặc thông tin không chính xác sẽ không được giải quyết.</ol>
+                    </ul>
+                </div>
+                <div class="col-sm-4" >
+                    <table class="table table-striped" id="mytable">
+                        <thead>
+                            <tr>
+                        <h4 style="font-size: 25px; font-weight: 700">Thông tin cá nhân</h4>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="ra">
+                                <td >Ảnh đại diện
+                                </td>
+                                <td><img src="im/avata.jpg" width="70" height="70" alt="" />
+                                    
+                                </td>                                           
+                            </tr>
+                            <tr class="blue">
+                                <td >Tên</td>
+                                <td id="name">Monochrome</td>
+                            </tr>
+                            <tr class="re">
+                                <td > Mật Khẩu</td>
+                                <td id="pass">********
+                                </td>
+                            </tr>
+                            <tr class="blue">
+                                <td>Ngày sinh</td>
+                                <td id="dob">17/09/2002</td>
+                            </tr>
+                            <tr class="blue1">
+                                <td >Số điện thoại</td>
+                                <td id="phone">0987656xxx</td>
+                            </tr>
+                            <tr class="blue">
+                                <td >Địa chỉ</td>
+                                <td id="add">Phòng F204 - Hòa Lạc resort</td>
+                            </tr>
+                            <tr class="blue1">
+                                <td >Email</td>
+                                <td id="mail">thanhctse05756@fpt.edu.vn</td>
+                            </tr>
+                            <tr class="blue">
+                                <td >Sở thích</td>
+                                <td id="mail">Chưa có dữ liệu</td>
+                            </tr>
+
+                        </tbody>
+                    </table><a href="profile.html" style="text-align: center; display: block">Về trang quản lí tài khoản</a>
+                </div>
+                <div class="col-sm-7" id="info">
+                    <h4 style="font-size: 25px; font-weight: 500">Thay đổi thông tin</h4>
+                    <form class="form-horizontal" active="#" >
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Tên</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="chname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Mật khẩu</label>
+                            <div class="col-sm-9">
+                                <input title="Bạn nhập mã từ tin nhắn để đổi mật khẩu" type="text" class="form-control" id="pass" placeholder="********" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Ngày sinh</label>
+                            <div class="col-sm-9">
+                                <input type="date" class="form-control" id="chdate" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Số điện thoại</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="chphone" >
+                            </div>
+                        </div>                           
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Địa chỉ</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="chadd" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Email:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="chemail">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="email">Sở thích</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="chfav" >
+                            </div>
+                        </div>
+                        <div class="form-group">        
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <button id="update" onclick="getValue()" type="submit" class="btn btn-default" style="margin-left: 170px;text-align: center; width: 50%">Cập nhật</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        <footer class="end"><hr/><a href="#">Điều khoản sử dụng </a> | <a href="#"> Chính sách bảo mật</a></footer>
+        </div>
+        <br>
+    </body>
+</html>

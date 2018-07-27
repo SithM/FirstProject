@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h3{
+                font-size: 30px;
+            }
+            input[type=email], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                font-size: 15px;
+                resize: none;
+            }
+
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+             body{
+                background-image: url(img/great-collection-of-hand-drawn-chef-items_23-2147630135.jpg);
+            }
+            
+        </style>
+    <body>
+
+        <h3 style="color: brown" align="center">THƯ ĐÓNG GÓP</h3>
+
+        <div>
+            <form action="index.html">
+                <label for="fname">Email:(*)</label>
+                <input type="email" name="Email:(*)" placeholder="Your email..">
+               
+                    <textarea placeholder="Viết bình luận của bạn tại đây..."></textarea>
+
+                <input type="Submit" onclick='alert("Cảm ơn bạn đã góp ý!")' value="Gửi">
+            </form>
+        </div>
+        <h3 style="color: brown" align="center">HOẶC GÓP Ý MÓN ĂN KHÁC</h3>
+        <form action="send.html">
+                <input type="Submit" value="Nhấp vào đây...">
+            </form>
+    </body>
+</html>

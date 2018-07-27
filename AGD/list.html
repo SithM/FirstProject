@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.html" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{background: white;border-width: 0px 2px 2px 2px;border-style: solid; border-color: #d3d3d3; height: auto; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #ffffff; height: 500px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            #end{ height: auto; color: black; padding-left: 50px;background: #f1f1f1}
+            #father{width: 100%; text-align: center; padding: 0px 20px 0px 20px}
+            #father h2{color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: 'Roboto'; font-size: 25px; background: #CEF6F5; padding: 13px}
+            #father h2:hover{color:black}
+            #father h3{display: block; text-align: left; font-family: 'Roboto'}            
+            #father p{text-align: left; font-size: 18px}
+            #father div.ke{height:30px; width: 100%}
+            #father:after{clear: both;content: ".";display: block;width: 0px;height: 0px;}
+            #father div.danhmuc{border-radius: 2px; width: 30%;margin: 10px; height: auto; border: 2px solid #d3d3d3;float: left; position: relative; padding: 20px}
+            #father div.khung{width: 75%; height: auto; display: table; float: left}
+            #father div.group{width: 23%; height: auto; display: table; float: right; margin-top: 80px; border: 2px solid #d3d3d3; border-radius: 4px; padding: 0px 15px 10px 15px}
+            #father div.checkbox{text-align: left; float: left; font-size: 17px; font-family: 'Roboto'}
+            #father div.left{width: 45%;height: auto; float: left}
+            #father div.right{width: 45%;height: auto; float: right}
+            * {box-sizing: border-box;}
+
+            .container {
+                position: relative;
+                width: 50%;
+                max-width: 300px;
+                width: 33%; height: auto; border: 1px solid #d3d3d3;float: left; position: relative; padding: 20px; padding-bottom: 0px;
+            }
+
+            .overlay {
+                position: absolute; 
+                bottom: 0; 
+                background: rgba(224, 255, 255, 0.5); /* Black see-through */
+                color: #f1f1f1; 
+                width: 87%;
+                transition: .5s ease;
+                opacity:0;
+                color: white;
+                font-size: 20px;
+                margin-bottom: 55px;
+                text-align: center;
+                overflow: hidden;
+            }
+
+
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .overlay a{display: block; background: rgba(0,0,0,0.5); width: 50%; float: left; height: 50px; padding: 10px;}
+            .overlay a span{font-size:27px}
+            div.container h5{ font-size: 16px; font-family: monospace; font-weight: 500; text-align: left;}
+            div.container-1{padding-top: 10px; margin-left: 290px}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Tất Cả Tin</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="listgiavi.html">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li class="active">Món Ăn Ưa Thích</li>        
+            </ul>
+            <div id="father"> 
+                <div class="khung"><h2>Xem nhiều nhất</h2><div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div>
+                    <div class="container">
+                        <img src="im/mo.jpeg" height="258" width="237" alt="Avatar" class="image">
+                        <div class="overlay"><a href="#"><span class="glyphicon glyphicon-heart"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-eye-open"></span></a></div>
+                        <h5>Bánh Ngọt Nướng Kiểu Pháp<br><i>-2 người ăn</i></h5>
+                    </div></div>
+                <div class="group">
+                    <h3>Bộ Lọc</h3><hr>
+                    <div><h4>Nguyên Liệu</h4>
+                        <div class="left"><form>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Thịt heo</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Thịt Gà</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Thịt Bò</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Cá Ngừ</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Cá Hồi</label>
+                                </div>
+                            </form></div>
+                        <div class="right"><form>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Măng</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Cà chua</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Hành tây</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Dứa</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Rong Biển</label>
+                                </div>
+                            </form></div></div>
+                    <br><br><br><br><br><br><br><br>
+                    <div><hr><h4>Cách nấu</h4>
+                        <div class="left"><form>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Rán</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Nướng</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Kho</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Luộc</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Hấp</label>
+                                </div>
+                            </form></div>
+                        <div class="right"><form>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Rán</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Nướng</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Kho</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Luộc</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">Hấp</label>
+                                </div>
+                            </form></div></div>
+                    <div><label><a href="find.html" class="btn btn-info" role="button">Search</a></label></div>
+                </div>
+            </div>       
+            <div class="container-1">
+                <ul class="pagination">
+                    <li><a href="#">Pre</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div></div>
+        <br>
+        <div id="end">
+            <hr/>
+            <b>Bản quyền thuộc về group 1</b>
+            <p>Nhà tài trợ: Google, w3school, web designer wall</p>
+            <p>THÀNH VIÊN: Vũ Quyết Thắng<br>Lưu Thị Phương Thảo <br> Cao Tiến Thành</p>
+        </div>
+
+    </body>
+</html>

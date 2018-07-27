@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ăn gì đây</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="//hstatic.net/0/global/design/member/fonts/roboto.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100italic,100,300,300italic,400italic,500italic,500,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #topfind input.zxc{position: absolute;top: 10px; width: 300px; height: 30px; right: 50px;position: fixed; z-index: 2;}
+            .material-icons {position: absolute;top: 10px; right:50px; font-size:31px;position: fixed; z-index: 3}
+            .menui{position: absolute;top: 7px; left: 10px; font-size:20px;position: fixed; width: 30px }
+            body {color: #333;background-image: url(im/background.jpg);}
+            *{margin: 0px;padding: 0px;}
+            .navbar{background: #39C0E5; border: none}
+            a.dropdown-toggle{ display: block; width:auto; text-align: center; font-family: monospace; font-weight: 900}
+            #myNavbar a.dropdown-toggle:visited{color:black; background: #5ECEEE }
+            ul.dropdown-menu li a:hover{background: #5ECEEE}
+            #granfather{background: white;border-width: 0px 2px 2px 2px;border-style: solid; border-color: #d3d3d3; height: auto; margin: 0px 100px 0px 100px }
+            #mid{ height: 100%; display: table;}
+            #fix{ background: #ffffff; height: 500px; width: 100%; }
+            #fit{background: #ffffff; height: 50px; width: 100%; }
+            #father{width: 100%; text-align: center; padding: 0px 20px 0px 20px}
+            #father h2{display: block; text-align: left; font-family: 'Roboto'; color: #696969}
+            #father h2:hover{color:black}
+            #father h3{color: #696969; width: 100%;border-left: 6px solid #00BFFF; display: block; text-align: left; font-family: 'Roboto'; font-size: 25px; background: #CEF6F5; padding: 13px}
+            #father h4{font-family: monospace;display: block; text-align: left; font-weight: 900; }
+            #father h5{display: block; text-align: left; font-family: monospace; font-weight: 800}            
+            #father p{text-align: left; font-size: 15px}
+            #father div.ke{height:30px; width: 100%}
+            #father:after{clear: both;content: ".";display: block;width: 0px;height: 0px;}
+            #father div.danhmuc{border-radius: 2px; width: 30%;margin: 10px; height: auto; border: 2px solid #d3d3d3;float: left; position: relative; padding: 20px}
+            #father div.son{width: 100%; height: auto; display: table; float: left; padding-left: 10px}
+            #father img {float: left; padding-left: 10px}
+            #father div.info{width: 47%; height: auto; display: table; float: right; padding: 0px 5px 5px 10px}
+            #father div.main{width: 100%; height: auto; display: table; padding-left: 50px}
+            #father img{display: block}
+            #father div ul li{list-style-type: none; padding-left: 15px}
+            #father textarea{ width: 90%; height: 100px; border: 1px solid #b3b3b3; border-radius: 3px; margin-bottom: 10px}
+            #father input{ width: 51%; height: 40px; border: 1px solid #b3b3b3; border-radius: 2px; float:left; margin:0px 0px 10px 55px}
+            #father input.submit{ width: 100px; height: 40px; border: 1px solid #b3b3b3; border-radius: 2px; float:left; margin:0px 0px 10px 55px}
+            #father div.listcomment{border-left: 6px solid #00BFFF;background: #CEF6F5 ;width: 90%; height: auto; border-radius: 2px; float: left;margin:0px 0px 10px 55px }
+            #end{ height: auto; color: black; padding-left: 50px;background: #f1f1f1}
+            div.fit{margin-left: 50px}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html" ><span style="font-size: 30px; margin-top: -5px;" title="Trang Chủ" class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <div class="fix">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Thông Tin Hữu Ích <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Sức khỏe ăn uống</a></li>
+                                    <li><a href="#section42">Thực phẩm</a></li>
+                                    <li><a href="#section42">Dinh dưỡng</a></li>
+                                    <li><a href="#">Mẹo Vặt</a></li>
+                                    <li><a href="info.html">Tất Cả Tin</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Gia Vị Bạn Cần <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="ajinomoto.html">Ajinomoto</a></li>
+                                    <li><a href="#section42">Ajingon</a></li>
+                                    <li><a href="#section43">Chinsu</a></li>
+                                    <li><a href="#section44">Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" style="color:#696969" data-toggle="dropdown" href="#">Góp Ý <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#section41">Góp Ý Món Ăn Mới</a></li>
+                                    <li><a href="#section42">Phản Hồi </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form id="topfind" action="sushi.html">
+                            <input class="zxc"style="font-size: 20px" type="text" name="search">
+                        </form>
+                        <i class="material-icons">search</i>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+        <div id="fit"></div>
+        <div id="granfather">
+            <ul class="breadcrumb">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Xem Nhiều</a></li>
+                <li class="active">Sushi Cá Ngừ</li>        
+            </ul>
+            <div id="father">
+                <div class="son">
+                    <h3>Sushi Cá Ngừ</h3>    
+                </div>
+                <img src="im/shushi.jpg" width="580" height="400" alt="sushi"/>
+                <div class="info">
+                    <h4>Giới Thiệu:</h4>
+                    <p>Sushi là món an truyền thống củaa Nhật Bản, chế biến nhanh gọn, tiện lợi để có thể đem theo ăn trưa hoặc bữa ăn phụ,
+                        phù hợp với những người làm việc văn phòng<br>
+                        Bạn có thể xem hướng dẫn phía bên dưới hoặc xem video dưới đây. Chúc bạn thành công.</p>
+                    
+                    <iframe width="480" height="245" src="https://www.youtube.com/embed/eODzRXHdVDU?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>Video</iframe>
+                    
+                </div>
+                <div class="main">
+                    <h4>Chuẩn bị: </h4>
+                    <ul>
+                        <li><p>Tôm tươi: 100gram</p></li>
+                        <li><p>Cơm nấu từ gạo dẻo của Nhật: 3 chén</p></li>
+                        <li><p>Cá ngừ ngâm dầu: 1 hộp</p></li>
+                        <li><p>Dưa leo: 1 trái</p></li>
+                        <li><p>Xà lách: 1 cây</p></li>
+                        <li><p>Mè trắng rang: 10gram</p></li>
+                        <li><p>Cà rốt: 1 củ</p></li>
+                    </ul>
+                    <h4>Cách làm</h4>
+                    <ul>
+                        <li><h5>1.Sơ Chế:</h5></li>
+                        <li><p>Dưa leo rửa sạch, cắt que dài. Cà rốt bào vỏ, cắt que dài, cạnh 1cm, luộc chín.<br> 
+                                Cá ngừ gạn bỏ dầu, dằm nhỏ, trộn đều với 1 ít tiêu, 1M xốt Mayonnaise LISA.<br>
+                                Tôm luộc chín, bóc hết vỏ. Cắt hạt lựu, trộn đều với 1 ít tiêu và 1M xốt Mayonnaise LISA</p></li>
+                        <li><h5>2.Thực Hiện:</h5></li>
+                        <li><p> Pha nước giấm: nấu tan 3M Giấm gạo lên men LISA, 1M đường, ít muối, để nguội.<br>
+                                Cho cơm đã nấu chín ra khay, trộn đều cơm với nước giấm đã pha.<br>
+                                Sushi nhân cá ngừ: đặt miếng rong biển lên vỉ cuốn, xếp đều cơm lên 3/4 lá rong biển, rắc mè lên cơm rồi xếp xà lách, dưa leo, cà rốt, cho cá ngừ lên trên rồi cuốn lại.<br>
+                                Sushi nhân tôm: đặt miếng rong biển lên vỉ cuốn, xếp đều cơm lên 3/4 lá rong biển, rắc mè lên cơm rồi xếp xà lách, dưa leo, tôm lên trên rồi cuốn tròn lại.</p></li></ul>
+                        <h4>Cách Dùng:</h4>
+                        <p>Cắt sushi thành từng miếng dày khoảng 1,5cm, xếp ra dĩa. Khi ăn chấm kèm nước tương LISA.</p>
+                    
+                </div>
+                <hr>
+                <div class="comment">
+                    <div class="fit">
+                        <p>Trên đây là cách làm món Sushi Cá Ngừ. 
+                           <br>Hãy nêu cảm nhận của bạn dưới phần bình luận. Hoặc nếu có góp ý, bạn
+                           bạn có thể gửi ý kiến của bạn cho chúng tôi <a href="report.html">tại đây</a>!</p>
+                    </div>
+                    <div class="listcomment">
+                        <ul>
+                            <h4>Bình Luận:</h4><hr>
+                            <li><h5>Lưu Thị Phương Thảo: </h5> <p>Ngon quá cả nhà ơi...</p></li><hr>
+                            <li><h5>Vũ Quyết Thắng </h5> <ul><p>Cá Ngừ em có thể mua ở đâu vậy mọi người? :( </p>
+                            <li><h5>Admin</h5> <p>Chào bạn. Cá Ngừ bạn có thể mua tại các siêu thị như BigC, vinMart nhé. Chúc bạn thành công! </p></li></ul>
+                            <hr>
+                            <li><h5>User Anonymous  </h5> <p>Mình nghĩ nên thêm trứng tráng nữa thì sẽ tuyệt hơn</p></li>
+                        </ul>
+                        
+                    </div>
+                    <textarea type="textarea" placeholder="Nhập bình luận của bạn..."></textarea>
+                    <input class="submit" type="submit" value="Gửi">
+                </div>
+                <br>
+            </div>
+        </div>
+
+
+
+        <div id="end">
+            <hr/>
+            <b>Bản quyền thuộc về group 1</b>
+            <p>Nhà tài trợ: Google, w3school, web designer wall</p>
+            <p>THÀNH VIÊN: Vũ Quyết Thắng<br>Lưu Thị Phương Thảo <br> Cao Tiến Thành</p>
+        </div>
+
+    </body>
+</html>
